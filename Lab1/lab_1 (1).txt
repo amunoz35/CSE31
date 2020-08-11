@@ -1,0 +1,33 @@
+CSE 31 Lab_01
+1. What does the -c flag do in gcc?
+   The -c flag will suppress linking and will produce a .o file for the source  file 
+   
+2. What does the -o flag do in gcc?
+   The -o flag places your output in the file it's being used.
+   
+3. How do you load output0 into gdb?
+	gdb output0.c   
+
+4. How do you set breakpoint at main?
+	(gdb)break output0.c:main
+   
+5. Command to run output0 inside gdb
+	(gdb)run output0
+6. Command to single-step through the program
+	(gbd)s
+Part 2
+7. What is the size (# of bits)of an assigned int?
+	9223372036854775807
+	
+8. Second output gives the value of a long int. What is the size of a long long?
+	64 bits
+9. Is the size of a signed int the same as an unsigned int?
+	Both ints and unsigned ints are either 2 or 4 bytes, having the same size;
+	the only difference is the value range within, with unsigned ints going from 0 to 4,294,967,295
+	and signed ints going from -2,147,483,648 to 2,147,483,647 
+10. What is the output and the reason for the value to be this way?
+	This value would be, as stated earlier, a signed int reaching -2,147,483,648, flipping the remainding
+	bits by one and reevaluating the value.(two's complement)
+
+Collaboration:
+Collaborated with and worked together:Marcus
