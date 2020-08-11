@@ -1,0 +1,11 @@
+Lab 4 Questions
+Collaborators: Marcus
+Q1: When you run the code, it fails to give the expected result, why?
+	The array does not allocate enough memory for "world"
+Q2: What's one way to fix this bug?
+	Allocating space [10] in the array
+Q3: How do you run a program in gdb? Why doesn't C provide the same kind of bounds - checking on arrays that Java does?
+	gcc hello.c -g -o hello then use "gdb ./hello"
+	C will only take addresses one at a time for allocation that will be put into an array. On the other hand, Java apparently will put the array in the same buffer.
+Q4:  What is a pro and con for implementing strings as dumb arrays rather than smart objects like in Java?
+	Dumb object pro: encapsulation allows to use the strings as arrays separately; without any other part.
