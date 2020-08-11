@@ -1,0 +1,14 @@
+Collaborators: N/A
+
+1. The bug in swap2.s is that the temp pointer is dereferenced without
+being initialized. Why might a programmer not notice this even after
+testing the buggy swap? In other words: what situation would allow
+buggy swap to seem to work correctly?
+	
+	The program will most likely not end with the proper syscall.
+	
+2. Explain how you guarantee it crashing with what is in proc.
+
+	You can force a crash by making the proc access a memory location that 
+	is not in the main method. Dereferencing it will cause the compiler
+	to throw an error.
