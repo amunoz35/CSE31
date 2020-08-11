@@ -1,0 +1,17 @@
+Lab_03
+Collaborators: Marcus
+For each line, answer:
+C1 - What areas of memory (heap or stack) are affected by the statement?
+C2 - Does any memory get allocated or freed?
+C3 - If C2 is true then where is this memory?
+C4 - Does the statement result in a memory leak?
+
+Line 1: C1 - Stack C2 - NULL C3 - NULL C4 - no
+Line 2: C1 - Stack C2 - no C3 - no C4 - no
+Line 3: C1 - Stack C2 - no C3 - no C4 - no
+Line 4: C1 - Stack C2 - no C3 - no C4 - no
+Line 5: C1 - Heap C2 - Allocated C3 - heap C4 - no
+Line 6: C1 - Stack C2 - NULL C3 - NULL C4 - no
+Line 7: C1 - Heap C2 - No C3 - no C4 - no
+Line 8: C1 - heap C2 - no C3 - NULL C4 - yes: ptr points to the variable num
+Line 9: C1 - Heap C2 - Allocated C3 - Heap C4 - no
