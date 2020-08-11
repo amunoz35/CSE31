@@ -1,0 +1,43 @@
+Collaborators:Worked with Gerardo
+Questions:
+1. How do you run a program in gbd?
+	gdb program[core]
+
+2. How do you pass command line arguments to a program when using gbd?
+	--args
+
+3. How do you set a breakpoint in a program?
+	use the break command 
+
+4. How do you set a breakpoint which only occurs when a set of conditions is true (some variables have a certain value)?
+	break ... if()
+
+5. How do you execute the next line of C code in the program after a break?
+	next[count]
+
+6. If the next line If the next line is a function call, you'll execute the call in one step. How do you execute the C code, line by line, inside the function call
+	break
+
+7. How do you continue running the program after breaking?
+	continue
+
+8. How can you see the value of a variable (or even an expression) in gbd?
+	print
+
+9. How do you configure gdb so it prints the value of a variable after every step?
+	display
+
+10. How do you print a list of all variables and their values in the current function?
+	info variables
+
+11. How do you exit out of gdb?
+	quit
+12. What is the bug causing append to not work correctly?
+	append would not allocate the proper space.It would continuously run until explicitly stated to stop at \0
+
+13. What line caused the segmentation fault?
+    Line <15>caused a segmentation fault in the scanf()
+14. How do you fix the line so it works properly?
+    The scanf is missing the dereference '&'.
+15. What is the bug? How do you fix it?
+    By referencing the sum variable, the function will take the address of the variable instead of the value itself.
